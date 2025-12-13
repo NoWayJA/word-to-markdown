@@ -1,0 +1,31 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="doc-gradient" x1="10" y1="20" x2="55" y2="80" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="md-gradient" x1="65" y1="40" x2="110" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="60" cy="60" r="58" fill="url(#bg-gradient)" stroke="rgba(255,255,255,0.1)" stroke-width="2"/>
+
+  <!-- Word document -->
+  <rect x="15" y="25" width="40" height="52" rx="4" fill="url(#doc-gradient)" opacity="0.9"/>
+  <path d="M22 38 L47 38 M22 46 L47 46 M22 54 L38 54" stroke="white" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Markdown document -->
+  <rect x="65" y="43" width="40" height="52" rx="4" fill="url(#md-gradient)" opacity="0.9"/>
+  <path d="M72 56 L97 56 M72 64 L97 64 M72 72 L88 72 M72 80 L97 80" stroke="white" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- Arrow/conversion indicator -->
+  <circle cx="60" cy="60" r="12" fill="rgba(96, 165, 250, 0.3)"/>
+  <path d="M54 60 L60 66 L66 54" stroke="#60a5fa" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

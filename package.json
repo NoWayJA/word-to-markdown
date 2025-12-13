@@ -1,7 +1,7 @@
 {
   "name": "word-to-markdown",
   "version": "1.0.0",
-  "description": "A simple, elegant web app that converts Word documents (.docx) to Markdown format, optimized for local LLMs like Ollama",
+  "description": "Privacy-first offline Word to Markdown converter for AI/LLMs. 100% client-side, no data upload. Perfect for Ollama, LM Studio, GPT4All. Convert sensitive documents without cloud risks.",
   "type": "module",
   "license": "MIT",
   "author": "Word to Markdown Contributors",
@@ -10,18 +10,31 @@
     "url": "https://github.com/yourusername/word-to-markdown"
   },
   "keywords": [
-    "word",
-    "markdown",
-    "docx",
-    "converter",
-    "llm",
+    "word-to-markdown",
+    "docx-converter",
+    "privacy",
+    "offline",
+    "local-llm",
     "ollama",
-    "document-conversion",
-    "react"
+    "lm-studio",
+    "gpt4all",
+    "ai-privacy",
+    "document-converter",
+    "client-side",
+    "no-upload",
+    "markdown",
+    "word",
+    "docx",
+    "private-ai",
+    "local-ai",
+    "data-privacy",
+    "offline-converter",
+    "browser-based"
   ],
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "build:standalone": "tsc -b && BUILD_STANDALONE=true vite build && mv standalone/index.html standalone/word-to-markdown.html",
     "preview": "vite preview",
     "lint": "eslint ."
   },
@@ -36,6 +49,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
+    "@types/node": "^25.0.1",
     "@types/react": "^19.0.6",
     "@types/react-dom": "^19.0.2",
     "@types/turndown": "^5.0.5",
@@ -49,7 +63,8 @@
     "tailwindcss": "^3.4.17",
     "typescript": "~5.6.2",
     "typescript-eslint": "^8.18.2",
-    "vite": "^6.0.5"
+    "vite": "^6.0.5",
+    "vite-plugin-singlefile": "^2.3.0"
   },
   "engines": {
     "node": ">=18.0.0"
