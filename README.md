@@ -30,6 +30,20 @@
 
 ---
 
+## Quick Start (No Installation Required)
+
+The easiest way to use Word to Markdown is with the standalone HTML file - no server or installation needed!
+
+**[⬇️ Download word-to-markdown.html](https://github.com/NoWayJA/word-to-markdown/raw/main/standalone/word-to-markdown.html)**
+
+1. Click the download link above
+2. Double-click the downloaded file to open it in your browser
+3. Start converting your Word documents
+
+That's it! The standalone version works completely offline and runs entirely in your browser.
+
+---
+
 ## Why Privacy Matters
 
 When working with AI and LLMs, you often need to convert documents containing sensitive information - business reports, legal documents, personal notes, medical records, or confidential research. Most online converters upload your files to their servers, creating privacy and security risks.
@@ -60,20 +74,6 @@ This makes it ideal for:
 - **ZIP Bundle Output** - Download everything in a ready-to-use package
 - **Dark Glassmorphic UI** - Modern, beautiful interface
 - **Optimized for Local LLMs** - Clean markdown output perfect for Ollama, LM Studio, GPT4All, and other local AI tools
-
-## Demo
-
-![Word to Markdown Screenshot](docs/screenshot.png)
-
-## Quick Start (No Installation Required)
-
-The easiest way to use Word to Markdown is with the standalone HTML file - no server or installation needed!
-
-1. Download `standalone/word-to-markdown.html` from this repository
-2. Double-click the file to open it in your browser
-3. Start converting your Word documents
-
-That's it! The standalone version works completely offline and runs entirely in your browser.
 
 ## Development Setup
 
