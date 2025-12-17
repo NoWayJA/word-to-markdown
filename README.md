@@ -33,16 +33,20 @@
 
 ## Quick Start (No Installation Required)
 
-The easiest way to use Word to Markdown is with the standalone HTML file - no server or installation needed!
+### Try it Online
+
+**[🚀 Launch Word to Markdown](https://nowayja.github.io/word-to-markdown/)** - Use it right now in your browser!
+
+> Even the online version processes everything locally - your documents never leave your device.
+
+### Download for Offline Use
 
 **[⬇️ Download word-to-markdown.zip](https://github.com/NoWayJA/word-to-markdown/raw/main/standalone/word-to-markdown.zip)**
 
 1. Click the download link above
 2. Extract the ZIP file
 3. Double-click `word-to-markdown.html` to open it in your browser
-4. Start converting your Word documents
-
-That's it! The standalone version works completely offline and runs entirely in your browser.
+4. Works completely offline - no internet required!
 
 ---
 
