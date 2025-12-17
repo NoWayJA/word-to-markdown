@@ -34,7 +34,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "build:standalone": "tsc -b && BUILD_STANDALONE=true vite build && mv standalone/index.html standalone/word-to-markdown.html && cd standalone && zip word-to-markdown.zip word-to-markdown.html",
+    "build:standalone": "tsc -b && BUILD_STANDALONE=true vite build && mv standalone/index.html standalone/word-to-markdown.html && cd standalone && zip word-to-markdown.zip word-to-markdown.html && cp word-to-markdown.html ../docs/index.html",
     "preview": "vite preview",
     "lint": "eslint ."
   },
