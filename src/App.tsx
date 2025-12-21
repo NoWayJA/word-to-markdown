@@ -6,7 +6,7 @@ import { ConvertButton } from './components/ConvertButton';
 import { ProgressIndicator } from './components/ProgressIndicator';
 import { DownloadSection } from './components/DownloadSection';
 import { convertWordToMarkdown } from './utils/converter';
-import { generateZipBundle, downloadZipFile } from './utils/zipGenerator';
+import { generateZipBundle, saveOrDownloadZipFile } from './utils/zipGenerator';
 import { ImageHandlingMode, ConversionStatus, ConversionResult } from './types';
 
 function App() {
@@ -46,7 +46,7 @@ function App() {
 
     try {
       const zipBlob = await generateZipBundle(result);
-      downloadZipFile(zipBlob, result.filename);
+      await saveOrDownloadZipFile(zipBlob, result.filename);
     } catch {
       setStatus({
         status: 'error',
