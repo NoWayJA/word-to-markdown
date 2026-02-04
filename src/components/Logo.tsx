@@ -26,7 +26,7 @@ export const Logo = () => {
 
       <div className="text-left">
         <h1 className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
-          Word to Markdown
+          Doc to Markdown
         </h1>
         <p className="text-xs text-gray-400">For Local LLMs</p>
       </div>
