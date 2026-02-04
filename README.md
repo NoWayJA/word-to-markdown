@@ -257,5 +257,5 @@ This tool is useful for people searching for:
 </p>
 
 <p align="center">
-  <sub>Sponsored by <a href="https://www.adappt.ai">Adappt AI - Custom Software & AI Development</a></sub>
+  This project sponsored by <a href="https://www.adappt.ai"><strong>Adappt AI</strong></a>
 </p>
