@@ -16,7 +16,8 @@ export const DropZone = ({ onFileSelect, disabled }: DropZoneProps) => {
   const { getRootProps, getInputProps, isDragActive, fileRejections } = useDropzone({
     onDrop,
     accept: {
-      'application/vnd.openxmlformats-officedocument.wordprocessingml.document': ['.docx']
+      'application/vnd.openxmlformats-officedocument.wordprocessingml.document': ['.docx'],
+      'application/pdf': ['.pdf']
     },
     maxFiles: 1,
     maxSize: 200 * 1024 * 1024,
@@ -52,14 +53,14 @@ export const DropZone = ({ onFileSelect, disabled }: DropZoneProps) => {
           </svg>
 
           {isDragActive ? (
-            <p className="text-lg text-cyan-400">Drop your Word document here</p>
+            <p className="text-lg text-cyan-400">Drop your document here</p>
           ) : (
             <>
               <div>
                 <p className="text-lg mb-2">
                   <span className="text-cyan-400 font-semibold">Click to browse</span> or drag and drop
                 </p>
-                <p className="text-sm text-gray-400">Word documents (.docx) up to 50MB</p>
+                <p className="text-sm text-gray-400">Word (.docx) or PDF files up to 200MB</p>
               </div>
             </>
           )}
@@ -70,9 +71,9 @@ export const DropZone = ({ onFileSelect, disabled }: DropZoneProps) => {
         <div className="mt-3 p-3 glass border-red-400/50">
           <p className="text-sm text-red-400">
             {fileRejections[0].errors[0].code === 'file-too-large'
-              ? 'File is too large. Maximum size is 50MB.'
+              ? 'File is too large. Maximum size is 200MB.'
               : fileRejections[0].errors[0].code === 'file-invalid-type'
-              ? 'Invalid file type. Please upload a .docx file.'
+              ? 'Invalid file type. Please upload a .docx or .pdf file.'
               : 'Error uploading file. Please try again.'}
           </p>
         </div>

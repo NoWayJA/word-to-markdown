@@ -6,6 +6,7 @@ import { ConvertButton } from './components/ConvertButton';
 import { ProgressIndicator } from './components/ProgressIndicator';
 import { DownloadSection } from './components/DownloadSection';
 import { convertWordToMarkdown } from './utils/converter';
+import { convertPdfToMarkdown } from './utils/pdfConverter';
 import { generateZipBundle, saveOrDownloadZipFile } from './utils/zipGenerator';
 import { ImageHandlingMode, ConversionStatus, ConversionResult } from './types';
 
@@ -27,7 +28,10 @@ function App() {
     setStatus({ status: 'converting' });
 
     try {
-      const conversionResult = await convertWordToMarkdown(selectedFile, { imageMode });
+      const isPdf = selectedFile.name.toLowerCase().endsWith('.pdf');
+      const conversionResult = isPdf
+        ? await convertPdfToMarkdown(selectedFile, { imageMode })
+        : await convertWordToMarkdown(selectedFile, { imageMode });
       setResult(conversionResult);
       setStatus({
         status: 'success',
@@ -74,7 +78,7 @@ function App() {
           <div className="mb-6">
             <h2 className="text-sm font-semibold text-gray-300 mb-2">How to use with Ollama:</h2>
             <ol className="text-sm text-gray-400 space-y-1 list-decimal list-inside">
-              <li>Upload your Word document (.docx)</li>
+              <li>Upload your Word (.docx) or PDF document</li>
               <li>Choose how to handle images</li>
               <li>Download the ZIP file</li>
               <li>Extract and open the markdown in Ollama UI</li>
