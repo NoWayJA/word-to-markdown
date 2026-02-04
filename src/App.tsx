@@ -143,6 +143,7 @@ function App() {
                 onDownload={handleDownload}
                 onReset={handleReset}
                 filename={result.filename}
+                markdown={result.markdown}
               />
             )}
           </div>
