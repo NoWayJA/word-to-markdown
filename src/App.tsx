@@ -76,13 +76,13 @@ function App() {
 
         <div className="glass p-8 mb-6">
           <div className="mb-6">
-            <h2 className="text-sm font-semibold text-gray-300 mb-2">How to use with Ollama:</h2>
+            <h2 className="text-sm font-semibold text-gray-300 mb-2">How to use:</h2>
             <ol className="text-sm text-gray-400 space-y-1 list-decimal list-inside">
               <li>Upload your Word (.docx) or PDF document</li>
               <li>Choose how to handle images</li>
-              <li>Download the ZIP file</li>
-              <li>Extract and open the markdown in Ollama UI</li>
-              <li>Your document is now ready for AI analysis!</li>
+              <li>Click Convert to Markdown</li>
+              <li>Copy to clipboard or download as ZIP</li>
+              <li>Paste into Ollama, LM Studio, or any LLM</li>
             </ol>
           </div>
 

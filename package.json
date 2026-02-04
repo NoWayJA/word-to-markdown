@@ -1,7 +1,7 @@
 {
   "name": "word-to-markdown",
   "version": "1.0.0",
-  "description": "Privacy-first offline Word to Markdown converter for AI/LLMs. 100% client-side, no data upload. Perfect for Ollama, LM Studio, GPT4All. Convert sensitive documents without cloud risks.",
+  "description": "Privacy-first offline Word & PDF to Markdown converter for AI/LLMs. 100% client-side, no data upload. Perfect for Ollama, LM Studio, GPT4All. Convert sensitive documents without cloud risks.",
   "type": "module",
   "license": "MIT",
   "author": "Word to Markdown Contributors",
@@ -11,7 +11,9 @@
   },
   "keywords": [
     "word-to-markdown",
+    "pdf-to-markdown",
     "docx-converter",
+    "pdf-converter",
     "privacy",
     "offline",
     "local-llm",
@@ -25,6 +27,7 @@
     "markdown",
     "word",
     "docx",
+    "pdf",
     "private-ai",
     "local-ai",
     "data-privacy",
