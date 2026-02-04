@@ -149,9 +149,20 @@ function App() {
           </div>
         </div>
 
-        <div className="text-center">
+        <div className="text-center space-y-1">
           <p className="text-xs text-gray-500">
             All processing happens locally in your browser. No data is sent to external servers.
+          </p>
+          <p className="text-xs text-gray-500">
+            This project sponsored by{' '}
+            <a
+              href="https://www.adappt.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-cyan-400 hover:text-cyan-300 transition-colors"
+            >
+              Adappt AI
+            </a>
           </p>
         </div>
       </div>
